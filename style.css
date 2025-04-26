@@ -27,14 +27,13 @@
   padding: 0;
 }
 
-body {
+body, html {
   font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
   color: #fff;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 .main-wrapper {
@@ -46,6 +45,7 @@ h1 {
   background-color: #5e42a6;
   width: 100%;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -58,7 +58,8 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: end;
+  padding: 40px;
 }
 
 /*---------------------------------*/
@@ -79,12 +80,29 @@ section {
 
 .navbar ul li {
   list-style: none;
+  text-align: right;
+  padding-left: 140px;
+  padding-right: 3px;
+  border-bottom: 1px solid #6f5e97;
+  width: 220px;
 }
 
 .navbar a {
-  color: #fff;
+  color: #a39cb2;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  color: #cec6de;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar a.active {
+  color: #FFFFFF;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
 }
 
 /*-----------------------------*/
