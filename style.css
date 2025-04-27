@@ -34,6 +34,7 @@ body, html {
 
 h1 {
   font-size: 3.5rem;
+  font-weight: 500;
 }
 
 .main-wrapper {
@@ -44,8 +45,18 @@ h1 {
 .main-container {
   background-color: #5e42a6;
   width: 100%;
+  background-image: url(/images/splash.png);
+  background-size: cover;
+  background-position: center;
   overflow-y: scroll;
   scroll-behavior: smooth;
+}
+
+.overlay {
+ 
+  border-image-source: linear-gradient(rgba(26, 22, 35, 0.7),rgba(0, 0, 0, 0.9));
+  border-image-slice:  fill 1;
+  
 }
 
 section {
@@ -115,16 +126,14 @@ section {
   align-items: center;
   height: 100dvh;
   color: #fff;
-  font-size: 24px;
-  font-weight: 600;
   margin-bottom: 20px;
 }
 
-.about {
+.about, .contact, .services {
   display: flex;
   flex-direction: column;
   height: 100dvh;
-  background-color: aquamarine;
+  background-color: #5e42a6;
 }
 
 @media screen and (max-width: 900px) {
