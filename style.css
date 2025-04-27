@@ -142,6 +142,7 @@ section {
   }
   .nav-container {
     width: 100%;
+    align-items: center;
   }
 
   .navbar {
@@ -153,6 +154,12 @@ section {
   .nav-links {
     flex-direction: row;
     gap: 10px;
+  }
+
+  .navbar ul li {
+    border: none;
+    padding: 0 20px;
+    width: 110px;
   }
 }
 
