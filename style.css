@@ -27,7 +27,8 @@
   padding: 0;
 }
 
-body, html {
+body,
+html {
   font-family: "Poppins", sans-serif;
   color: #fff;
 }
@@ -53,14 +54,15 @@ h1 {
 }
 
 .overlay {
- 
-  border-image-source: linear-gradient(rgba(26, 22, 35, 0.7),rgba(0, 0, 0, 0.9));
-  border-image-slice:  fill 1;
-  
+  border-image-source: linear-gradient(
+    rgba(26, 22, 35, 0.7),
+    rgba(0, 0, 0, 0.9)
+  );
+  border-image-slice: fill 1;
 }
 
 section {
-  padding: 0 40px;
+  padding: 0 60px;
 }
 
 .nav-container {
@@ -73,7 +75,9 @@ section {
   padding: 40px;
 }
 
-.about, .contact, .services {
+.about,
+.contact,
+.services {
   display: flex;
   flex-direction: column;
   height: 100dvh;
@@ -92,7 +96,6 @@ section {
 
 .button-primary:hover {
   box-shadow: 0 0 10px 0 rgba(111, 94, 151, 0.6);
-  
 }
 
 /*---------------------------------*/
@@ -133,7 +136,7 @@ section {
 }
 
 .navbar a.active {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 500;
   transition: all 0.3s ease-in-out;
 }
@@ -153,11 +156,11 @@ section {
 
 .splash-text p {
   margin-bottom: 20px;
+}
 
 /*-----------------------------*/
 
 /* About */
-
 
 /*-----------------------------*/
 
@@ -170,11 +173,11 @@ footer {
 
 /*-----------------------------*/
 
-
 @media screen and (max-width: 900px) {
   .main-wrapper {
     flex-direction: column;
   }
+
   .nav-container {
     width: 100%;
     align-items: center;
@@ -203,10 +206,11 @@ footer {
     display: none;
   }
   section {
-    padding: 0 20px;
+    padding: 0 30px;
   }
 
   .welcome {
     justify-content: center;
+    text-align: center;
   }
 }
