@@ -61,7 +61,7 @@ h1 {
   border-image-slice: fill 1;
 }
 
-section {
+.welcome {
   padding: 0 60px;
 }
 
@@ -162,6 +162,20 @@ section {
 /*-----------------------------*/
 
 /* About */
+
+.about-wrapper {
+  display: flex;
+}
+
+.about-image {
+  flex: 1;
+  background-color: #b74e91;
+}
+
+.about-text {
+  flex: 2;
+  background-color: #a39cb2;
+}
 
 /*-----------------------------*/
 
