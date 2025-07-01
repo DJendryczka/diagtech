@@ -34,12 +34,16 @@ html {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: clamp(1.8rem, 2vw + 1rem, 3.5rem);
   font-weight: 500;
 }
 
 img {
   display: block; 
+  max-width: 100%;
+  height: auto; 
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 
 .main-wrapper {
