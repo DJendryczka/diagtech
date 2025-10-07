@@ -843,6 +843,13 @@ footer p {
 }
 
 /*-----------------------------*/
+@media screen and (max-width: 1100px) {
+  .nav-container {
+    width: 280px;;
+  }
+}
+
+
 
 @media screen and (max-width: 900px) {
   .main-wrapper {
@@ -958,5 +965,123 @@ footer p {
 
   .contact-info h2 {
     font-size: 2rem;
+  }
+}
+
+/* Text Dot Runner Animation - Ludzik */
+.simple-runner {
+  position: absolute;
+  width: 16px;
+  height: 24px;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.simple-runner::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #00d9ff;
+  border-radius: 50%;
+  top: 2px;
+  left: 4px;
+  box-shadow: 0 0 8px #00d9ff;
+}
+
+.simple-runner::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 12px;
+  background: #00d9ff;
+  top: 10px;
+  left: 5px;
+  border-radius: 3px;
+  box-shadow: 0 0 6px #00d9ff;
+}
+
+.runner-left-arm {
+  position: absolute;
+  width: 6px;
+  height: 2px;
+  background: #00d9ff;
+  top: 12px;
+  left: 1px;
+  border-radius: 2px;
+  transform-origin: right center;
+  animation: arm-swing-left 0.4s ease-in-out infinite alternate;
+  box-shadow: 0 0 4px #00d9ff;
+}
+
+.runner-right-arm {
+  position: absolute;
+  width: 6px;
+  height: 2px;
+  background: #00d9ff;
+  top: 12px;
+  right: 1px;
+  border-radius: 2px;
+  transform-origin: left center;
+  animation: arm-swing-right 0.4s ease-in-out infinite alternate;
+  box-shadow: 0 0 4px #00d9ff;
+}
+
+.runner-left-leg {
+  position: absolute;
+  width: 2px;
+  height: 8px;
+  background: #00d9ff;
+  bottom: 0;
+  left: 3px;
+  border-radius: 2px;
+  transform-origin: top center;
+  animation: leg-run-left 0.3s ease-in-out infinite alternate;
+  box-shadow: 0 0 4px #00d9ff;
+}
+
+.runner-right-leg {
+  position: absolute;
+  width: 2px;
+  height: 8px;
+  background: #00d9ff;
+  bottom: 0;
+  right: 3px;
+  border-radius: 2px;
+  transform-origin: top center;
+  animation: leg-run-right 0.3s ease-in-out infinite alternate;
+  box-shadow: 0 0 4px #00d9ff;
+}
+
+@keyframes arm-swing-left {
+  0% { transform: rotate(-20deg); }
+  100% { transform: rotate(20deg); }
+}
+
+@keyframes arm-swing-right {
+  0% { transform: rotate(20deg); }
+  100% { transform: rotate(-20deg); }
+}
+
+@keyframes leg-run-left {
+  0% { transform: rotate(-15deg); }
+  100% { transform: rotate(15deg); }
+}
+
+@keyframes leg-run-right {
+  0% { transform: rotate(15deg); }
+  100% { transform: rotate(-15deg); }
+}
+
+.runner-moving {
+  animation: runner-move-to-dot 2s ease-in-out;
+}
+
+@keyframes runner-move-to-dot {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(var(--target-x, 0)) translateY(var(--target-y, 0));
   }
 }
