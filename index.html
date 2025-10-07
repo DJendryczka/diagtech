@@ -3,8 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DiagTch Konsulting</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>DiagTech - ASP.NET Core, Blazor & Front-end Konsult | Webbutveckling</title>
+    <meta name="title" content="DiagTech - ASP.NET Core, Blazor & Front-end Konsult">
+    <meta name="description" content="Webbutvecklingskonsult i Sverige med fokus på ASP.NET Core, Blazor, C# och modern front-end. Kontakta mig för skräddarsydda webblösningar.">
+    <meta name="keywords" content="ASP.NET Core konsult, Blazor utvecklare, C# programmerare, webbutveckling Sverige, front-end konsult, fullstack utvecklare, React utvecklare, webb konsult Sverige, ASP.NET Core utveckling, Blazor WebAssembly">
+    <meta name="author" content="DiagTech">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://diagtech.se/">
+    <meta property="og:title" content="DiagTech - ASP.NET Core, Blazor & Front-end Konsult">
+    <meta property="og:description" content="Webbutvecklingskonsult med fokus på ASP.NET Core, Blazor och modern front-end utveckling. Skräddarsydda lösningar för ditt projekt.">
+    <meta property="og:image" content="https://diagtech.se/images/diagtech.png">
+    <meta property="og:locale" content="sv_SE">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://diagtech.se/">
+    <meta property="twitter:title" content="DiagTech - ASP.NET Core & Blazor Konsult">
+    <meta property="twitter:description" content="Webbutvecklingskonsult med fokus på ASP.NET Core, Blazor och modern front-end utveckling.">
+    <meta property="twitter:image" content="https://diagtech.se/images/diagtech.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://diagtech.se/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "DiagTech",
+      "description": "Webbutvecklingskonsult med fokus på ASP.NET Core, Blazor och modern front-end utveckling",
+      "url": "https://diagtech.se",
+      "telephone": "+46702060923",
+      "email": "info@diagtech.se",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "SE",
+        "addressRegion": "Sverige"
+      },
+      "areaServed": "SE",
+      "serviceType": ["Webbutveckling", "ASP.NET Core Utveckling", "Blazor Applikationer", "Front-end Utveckling"],
+      "priceRange": "Kontakta för offert"
+    }
+    </script>
 </head>
 <body>
     <div class="main-wrapper">
@@ -19,52 +69,145 @@
             </nav>
         </div>
         <div class="main-container overlay">
-            <section class="welcome" id="welcome">
+            <section class="welcome" id="welcome" aria-label="Välkomstsida">
                 <div class="splash-text">
                     <h1>Välkommen till DiagTech</h1>
-                    <p>Konsult inom fordonsdiagnostik<br> & webbutveckling.</p>
-                    <button class="button-primary">Kontakt</button>
+                    <p><strong>ASP.NET Core, Blazor & Modern Front-end</strong><br>Konsult med erfarenhet inom webbutveckling</p>
+                    <button class="button-primary" onclick="scrollToSection('contact')" aria-label="Gå till kontaktformulär">Kontakta mig</button>
                 </div>
             </section>
-            <section class="about" id="about">
+            <section class="about" id="about" aria-labelledby="about-heading">
                 <div class="about-wrapper">
                     <div class="about-image">
-                        <img src="images/pexels-moh-adbelghaffar-783941.jpg" alt="">
+                        <img src="images/whois.png" alt="Erfaren webbutvecklingskonsult specialiserad på ASP.NET Core och Blazor" loading="lazy" width="400" height="400">
                     </div>
                     <div class="about-text">
-                        <h2>Vem jag är</h2>
-                        <p>Jag är en konsult med över 10 års erfarenhet inom fordonsdiagnostik och webbutveckling. Jag erbjuder skräddarsydda lösningar för både privatpersoner och företag.</p>
-                        <button class="button-secondary">Läs mer</button>
+                        <h2 id="about-heading">Vem jag är</h2>
+                        <p>Jag är en konsult med erfarenhet inom webbutveckling. Jag erbjuder skräddarsydda lösningar för både privatpersoner och företag, med fokus på <strong>ASP.NET Core, Blazor och modern front-end utveckling</strong>.</p>
+                        
                     </div>
                 </div>
                 <div class="about-wrapper">
-                    <div class="about-image">
-                        <img src="images/pexels-pixabay-41162.jpg" alt="">
-                    </div>
                     <div class="about-text">
-                        <h2>Vem jag är</h2>
-                        <p>Jag är en konsult med över 10 års erfarenhet inom fordonsdiagnostik och webbutveckling. Jag erbjuder skräddarsydda lösningar för både privatpersoner och företag.</p>
-                        <button class="button-secondary">Läs mer</button>
+                        <h3>Teknisk kompetens</h3>
+                        <p>Jag arbetar med moderna teknologier som <strong>ASP.NET Core, C#, Blazor, React, HTML5, CSS3 och JavaScript</strong>. Jag hjälper företag att skapa webbapplikationer med fokus på funktionalitet och användarupplevelse.</p>
+                        <ul class="expertise-list" role="list">
+                            <li>🚀 C# & JavaScript utveckling</li>
+                            <li>⚛️ Blazor & React applikationer</li>
+                            <li>🎨 Responsiv design & UX/UI</li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/diagtech.png" alt="DiagTech - Modern webbutveckling med ASP.NET Core och Blazor" loading="lazy" width="400" height="400">
                     </div>
                 </div>
             </section>
-            <section class="services" id="services">
-
-                <div class="service-item">
-                    <h2>Service 1</h2>
-                    <p>Description of Service 1.</p>
+            <section class="services" id="services" aria-labelledby="services-heading">
+                <div class="services-header">
+                    <h2 id="services-heading">Mina tjänster</h2>
+                    <p>Lösningar inom ASP.NET Core, Blazor och modern front-end utveckling</p>
                 </div>
-                <div class="service-item">
-                    <h2>Service 2</h2>
-                    <p>Description of Service 2.</p>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="service-icon">⚙️</div>
+                        <h3>ASP.NET Core Utveckling</h3>
+                        <p>Jag utvecklar webbapplikationer med C# och ASP.NET Core. Fokus ligger på att bygga funktionella och skalbara backend-lösningar med modern arkitektur.</p>
+                        <ul>
+                            <li>ASP.NET Core Web API</li>
+                            <li>MVC applikationer</li>
+                            <li>Database integration</li>
+                            <li>Authentication & Authorization</li>
+                        </ul>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">⚡</div>
+                        <h3>Blazor Applikationer</h3>
+                        <p>Jag utvecklar klient-sidiga applikationer med Blazor. Genom att använda C# för både front-end och back-end blir koden mer konsistent och lättare att underhålla.</p>
+                        <ul>
+                            <li>Blazor Server & WebAssembly</li>
+                            <li>Komponentbaserad utveckling</li>
+                            <li>Real-time funktionalitet</li>
+                            <li>PWA integration</li>
+                        </ul>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">🎨</div>
+                        <h3>Modern Front-end</h3>
+                        <p>Jag skapar moderna och responsiva gränssnitt med fokus på kodkvalitet och prestanda. Med HTML5, CSS3 och JavaScript bygger jag lösningar som fungerar bra på alla plattformar.</p>
+                        <ul>
+                            <li>Responsiv design</li>
+                            <li>CSS Grid & Flexbox</li>
+                            <li>JavaScript ES6+</li>
+                            <li>React integration</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="service-item">
-                    <h2>Service 3</h2>
-                    <p>Description of Service 3.</p>
-                </div>
-                </section>
+            </section>
             <section class="contact" id="contact">
-                <h3>Kontakt</h3>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Kontakta mig</h2>
+                        <p>Redo att starta ditt nästa projekt? Låt oss diskutera hur jag kan hjälpa dig att förverkliga dina idéer.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-icon">📧</span>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:info@diagtech.se">info@diagtech.se</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📱</span>
+                                <div>
+                                    <h4>Telefon</h4>
+                                    <a href="tel:+46701234567">+46 70 206 09 23</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <div>
+                                    <h4>Plats</h4>
+                                    <p>Sverige (Remote arbete möjligt)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form action="https://formsubmit.co/info@diagtech.se" method="POST">
+                            <!-- FormSubmit.co configuration -->
+                            <input type="hidden" name="_subject" value="Ny kontakt från DiagTech">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://diagtech.se/thank-you.html">
+                            
+                            <div class="form-group">
+                                <label for="name">Namn</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Ämne</label>
+                                <select id="subject" name="Tjänst" required>
+                                    <option value="">Välj tjänst</option>
+                                    <option value="ASP.NET Core Utveckling">ASP.NET Core Utveckling</option>
+                                    <option value="Blazor Applikationer">Blazor Applikationer</option>
+                                    <option value="Modern Front-end">Modern Front-end</option>
+                                    <option value="Fullstack Lösning">Fullstack Lösning</option>
+                                    <option value="Annat">Annat</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Meddelande</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Berätta om ditt projekt..." required></textarea>
+                            </div>
+                            <button type="submit" class="button-primary">Skicka meddelande</button>
+                        </form>
+                    </div>
+                </div>
             </section>
             <footer>
                 <p>DiagTech 2025</p>

@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://diagtech.se/sitemap.xml
+
+# Disallow admin or private directories (if any in the future)
+# Disallow: /admin/
+# Disallow: /private/

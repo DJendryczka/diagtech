@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tack - DiagTech</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #312450 0%, #5e42a6 100%);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #b74e91;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .message {
+            font-size: 1.3em;
+            margin: 30px 0;
+            line-height: 1.6;
+        }
+        
+        .icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #b74e91, #5e42a6);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(183, 78, 145, 0.4);
+            margin-top: 20px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(183, 78, 145, 0.6);
+            background: linear-gradient(135deg, #d65ba3, #7551b8);
+        }
+        
+        .details {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #b74e91;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+                margin: 20px;
+            }
+            
+            h1 {
+                font-size: 2.5em;
+            }
+            
+            .message {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">✅</div>
+        <h1>Tack!</h1>
+        <p class="message">Ditt meddelande har skickats framgångsrikt. Vi återkommer till dig inom kort.</p>
+        
+        <div class="details">
+            <p><strong>📧 Vad händer nu?</strong></p>
+            <p>Vi har fått ditt meddelande och kommer att svara inom 24 timmar. Håll utkik efter ett svar från info@diagtech.se</p>
+        </div>
+        
+        <a href="index.html" class="btn">🏠 Tillbaka till startsidan</a>
+    </div>
+
+    <script>
+        // Auto redirect after 10 seconds
+        setTimeout(function() {
+            window.location.href = 'index.html';
+        }, 10000);
+    </script>
+</body>
+</html>
