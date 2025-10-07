@@ -33,6 +33,11 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
     
     <!-- Structured Data / Schema.org -->
@@ -70,16 +75,64 @@
         </div>
         <div class="main-container overlay">
             <section class="welcome" id="welcome" aria-label="Välkomstsida">
+                <!-- Animated background effects -->
+                <div class="bg-effects">
+                    <div class="floating-particles">
+                        <div class="particle">C</div>
+                        <div class="particle">#</div>
+                        <div class="particle">J</div>
+                        <div class="particle">S</div>
+                        <div class="particle">&lt;</div>
+                        <div class="particle">&gt;</div>
+                        <div class="particle">{</div>
+                        <div class="particle">}</div>
+                        <div class="particle">0</div>
+                        <div class="particle">1</div>
+                        <div class="particle">*</div>
+                        <div class="particle">/</div>
+                        <div class="particle">+</div>
+                        <div class="particle">-</div>
+                        <div class="particle">=</div>
+                        <div class="particle">;</div>
+                        <div class="particle">:</div>
+                        <div class="particle">[</div>
+                        <div class="particle">]</div>
+                        <div class="particle">(</div>
+                        <div class="particle">)</div>
+                        <div class="particle">$</div>
+                        <div class="particle">%</div>
+                        <div class="particle">&amp;</div>
+                    </div>
+                    <div class="light-beams">
+                        <div class="beam beam-1"></div>
+                        <div class="beam beam-2"></div>
+                        <div class="beam beam-3"></div>
+                    </div>
+                    <div class="grid-overlay"></div>
+                </div>
+                
                 <div class="splash-text">
                     <h1>Välkommen till DiagTech</h1>
-                    <p><strong>ASP.NET Core, Blazor & Modern Front-end</strong><br>Konsult med erfarenhet inom webbutveckling</p>
+                    <p><strong>ASP.NET Core & Modern Front-end Konsult</strong><br></p>
                     <button class="button-primary" onclick="scrollToSection('contact')" aria-label="Gå till kontaktformulär">Kontakta mig</button>
                 </div>
             </section>
             <section class="about" id="about" aria-labelledby="about-heading">
                 <div class="about-wrapper">
                     <div class="about-image">
-                        <img src="images/whois.png" alt="Erfaren webbutvecklingskonsult specialiserad på ASP.NET Core och Blazor" loading="lazy" width="400" height="400">
+                        <div class="about-icon">
+                            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="60" cy="60" r="58" stroke="url(#gradient1)" stroke-width="4"/>
+                                <circle cx="60" cy="45" r="15" fill="url(#gradient1)"/>
+                                <path d="M35 95c0-13.8 11.2-25 25-25s25 11.2 25 25" stroke="url(#gradient1)" stroke-width="4" stroke-linecap="round"/>
+                                <defs>
+                                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#0066ff"/>
+                                        <stop offset="100%" style="stop-color:#00d9ff"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
                     </div>
                     <div class="about-text">
                         <h2 id="about-heading">Vem jag är</h2>
@@ -98,19 +151,48 @@
                         </ul>
                     </div>
                     <div class="about-image">
-                        <img src="images/diagtech.png" alt="DiagTech - Modern webbutveckling med ASP.NET Core och Blazor" loading="lazy" width="400" height="400">
+                        <div class="about-icon">
+                            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="15" y="25" width="90" height="60" rx="8" stroke="url(#gradient2)" stroke-width="3" fill="rgba(0, 102, 255, 0.1)"/>
+                                <rect x="25" y="35" width="70" height="40" rx="4" fill="rgba(0, 217, 255, 0.2)"/>
+                                <circle cx="30" cy="45" r="3" fill="#00d9ff"/>
+                                <circle cx="40" cy="45" r="3" fill="#0066ff"/>
+                                <circle cx="50" cy="45" r="3" fill="#00d9ff"/>
+                                <rect x="30" y="55" width="60" height="2" fill="#0066ff"/>
+                                <rect x="30" y="60" width="45" height="2" fill="#00d9ff"/>
+                                <rect x="30" y="65" width="50" height="2" fill="#0066ff"/>
+                                <path d="M45 95L60 105L75 95" stroke="url(#gradient2)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#0066ff"/>
+                                        <stop offset="100%" style="stop-color:#00d9ff"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </section>
             <section class="services" id="services" aria-labelledby="services-heading">
                 <div class="services-header">
-                    <h2 id="services-heading">Mina tjänster</h2>
+                    <h2 id="services-heading">Tjänster</h2>
                     <p>Lösningar inom ASP.NET Core, Blazor och modern front-end utveckling</p>
                 </div>
                 <div class="services-grid">
                     <div class="service-item">
-                        <div class="service-icon">⚙️</div>
-                        <h3>ASP.NET Core Utveckling</h3>
+                        <div class="service-icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="5" y="15" width="50" height="30" rx="4" stroke="#00d9ff" stroke-width="2" fill="rgba(0, 102, 255, 0.1)"/>
+                                <circle cx="12" cy="22" r="2" fill="#00d9ff"/>
+                                <circle cx="18" cy="22" r="2" fill="#0066ff"/>
+                                <circle cx="24" cy="22" r="2" fill="#00d9ff"/>
+                                <rect x="12" y="28" width="35" height="2" fill="#0066ff"/>
+                                <rect x="12" y="32" width="25" height="2" fill="#00d9ff"/>
+                                <rect x="12" y="36" width="30" height="2" fill="#0066ff"/>
+                                <path d="M20 50 L30 55 L40 50" stroke="#00d9ff" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>ASP.NET Core</h3>
                         <p>Jag utvecklar webbapplikationer med C# och ASP.NET Core. Fokus ligger på att bygga funktionella och skalbara backend-lösningar med modern arkitektur.</p>
                         <ul>
                             <li>ASP.NET Core Web API</li>
@@ -120,7 +202,17 @@
                         </ul>
                     </div>
                     <div class="service-item">
-                        <div class="service-icon">⚡</div>
+                        <div class="service-icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30 5 L45 13 L45 37 L30 45 L15 37 L15 13 Z" stroke="#00d9ff" stroke-width="2" fill="rgba(0, 102, 255, 0.1)"/>
+                                <path d="M30 12 L39 17 L39 33 L30 38 L21 33 L21 17 Z" fill="rgba(0, 217, 255, 0.3)"/>
+                                <circle cx="30" cy="25" r="8" fill="#00d9ff" opacity="0.8"/>
+                                <path d="M25 22 L28 25 L37 16" stroke="#0066ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18 48 L30 53 L42 48" stroke="#00d9ff" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="12" cy="50" r="2.5" fill="#00d9ff" opacity="0.6"/>
+                                <circle cx="48" cy="50" r="2.5" fill="#0066ff" opacity="0.6"/>
+                            </svg>
+                        </div>
                         <h3>Blazor Applikationer</h3>
                         <p>Jag utvecklar klient-sidiga applikationer med Blazor. Genom att använda C# för både front-end och back-end blir koden mer konsistent och lättare att underhålla.</p>
                         <ul>
@@ -131,7 +223,17 @@
                         </ul>
                     </div>
                     <div class="service-item">
-                        <div class="service-icon">🎨</div>
+                        <div class="service-icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="8" y="12" width="44" height="36" rx="4" stroke="#00d9ff" stroke-width="2" fill="rgba(0, 102, 255, 0.1)"/>
+                                <rect x="12" y="18" width="36" height="24" rx="2" fill="rgba(0, 217, 255, 0.2)"/>
+                                <path d="M18 25 L22 29 L18 33 M26 33 L32 33" stroke="#00d9ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="15" cy="15" r="1.5" fill="#ff6b6b"/>
+                                <circle cx="19" cy="15" r="1.5" fill="#ffd93d"/>
+                                <circle cx="23" cy="15" r="1.5" fill="#6bcf7f"/>
+                                <path d="M35 25 L39 25 M35 29 L41 29 M35 33 L37 33" stroke="#0066ff" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
                         <h3>Modern Front-end</h3>
                         <p>Jag skapar moderna och responsiva gränssnitt med fokus på kodkvalitet och prestanda. Med HTML5, CSS3 och JavaScript bygger jag lösningar som fungerar bra på alla plattformar.</p>
                         <ul>
@@ -151,21 +253,45 @@
                         
                         <div class="contact-details">
                             <div class="contact-item">
-                                <span class="contact-icon">📧</span>
+                                <div class="contact-icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="4" y="8" width="24" height="16" rx="2" stroke="#00d9ff" stroke-width="2" fill="rgba(0, 102, 255, 0.1)"/>
+                                        <path d="M4 10 L16 18 L28 10" stroke="#0066ff" stroke-width="2" stroke-linecap="round"/>
+                                        <circle cx="8" cy="12" r="1" fill="#00d9ff"/>
+                                        <circle cx="24" cy="12" r="1" fill="#0066ff"/>
+                                    </svg>
+                                </div>
                                 <div>
                                     <h4>Email</h4>
                                     <a href="mailto:info@diagtech.se">info@diagtech.se</a>
                                 </div>
                             </div>
                             <div class="contact-item">
-                                <span class="contact-icon">📱</span>
+                                <div class="contact-icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="8" y="4" width="16" height="24" rx="3" stroke="#00d9ff" stroke-width="2" fill="rgba(0, 102, 255, 0.1)"/>
+                                        <rect x="10" y="8" width="12" height="16" rx="1" fill="rgba(0, 217, 255, 0.2)"/>
+                                        <circle cx="16" cy="26" r="1.5" fill="#0066ff"/>
+                                        <rect x="14" y="6" width="4" height="1" rx="0.5" fill="#00d9ff"/>
+                                        <rect x="12" y="10" width="8" height="1" fill="#0066ff"/>
+                                        <rect x="12" y="12" width="6" height="1" fill="#00d9ff"/>
+                                        <rect x="12" y="14" width="7" height="1" fill="#0066ff"/>
+                                    </svg>
+                                </div>
                                 <div>
                                     <h4>Telefon</h4>
                                     <a href="tel:+46701234567">+46 70 206 09 23</a>
                                 </div>
                             </div>
                             <div class="contact-item">
-                                <span class="contact-icon">📍</span>
+                                <div class="contact-icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="16" cy="14" r="6" stroke="#00d9ff" stroke-width="2" fill="rgba(0, 102, 255, 0.1)"/>
+                                        <circle cx="16" cy="14" r="3" fill="#0066ff"/>
+                                        <path d="M10 20 C12 24, 20 24, 22 20" stroke="#00d9ff" stroke-width="2" stroke-linecap="round"/>
+                                        <path d="M8 22 C10 26, 22 26, 24 22" stroke="#0066ff" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+                                    </svg>
+                                </div>
                                 <div>
                                     <h4>Plats</h4>
                                     <p>Sverige (Remote arbete möjligt)</p>
