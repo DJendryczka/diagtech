@@ -62,284 +62,196 @@
     </script>
 </head>
 <body>
-    <div class="main-wrapper">
-        <div class="nav-container">
-            <nav class="navbar">
-                <ul class="nav-links">
-                    <li><a href="#welcome">Hem</a></li>   
-                    <li><a href="#about">Vem jag är</a></li>
-                    <li><a href="#services">Tjänster</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
+    <header class="site-header">
+        <div class="logo">DiagTech</div>
+        <nav class="nav" aria-label="Huvudmeny">
+            <button class="nav-toggle" aria-label="Öppna meny" aria-expanded="false" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#hero" data-i18n="nav.home">Hem</a>
+                <a href="#about" data-i18n="nav.about">Vem jag är</a>
+                <a href="#services" data-i18n="nav.services">Tjänster</a>
+                <a href="#contact" data-i18n="nav.contact">Kontakt</a>
+            </div>
+        </nav>
+        <div class="lang-switch" aria-label="Språkval">
+            <button class="lang-btn active" data-lang="sv">SV</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="section hero">
+            <div class="hero-bg-effect">
+                <div class="gradient-orb orb-1"></div>
+                <div class="gradient-orb orb-2"></div>
+                <div class="gradient-orb orb-3"></div>
+                <div class="grid-pattern"></div>
+            </div>
+            <div class="floating-elements">
+                <div class="float-item">{ }</div>
+                <div class="float-item">&lt;/&gt;</div>
+                <div class="float-item">API</div>
+                <div class="float-item">C#</div>
+                <div class="float-item">⚡</div>
+                <div class="float-item">▲</div>
+            </div>
+            <div class="hero-content">
+                <div class="badge" data-i18n="hero.badge">Front-end konsult • Sverige</div>
+                <h1 data-i18n="hero.title">Jag bygger skarpa digitala upplevelser.</h1>
+                <p class="lead" data-i18n="hero.lead">ASP.NET Core, Blazor och modern front-end som levererar snabbare lanseringar och hållbar kod.</p>
+                <div class="actions">
+                    <a class="button primary" href="#contact" data-i18n="hero.cta">Boka ett samtal</a>
+                    <a class="button ghost" href="#services" data-i18n="hero.secondary">Se tjänster</a>
+                </div>
+                <div class="meta">
+                    <span data-i18n="hero.meta1">+4 år erfarenhet</span>
+                    <span data-i18n="hero.meta2">Remote & på plats</span>
+                </div>
+            </div>
+            <div class="hero-card" aria-label="Profilkort">
+                <div class="card-glow"></div>
+                <div class="card-header" data-i18n="hero.cardTitle">Din partner för webbutveckling</div>
+                <ul class="card-list">
+                    <li data-i18n="hero.point1">Fullstack .NET & JavaScript</li>
+                    <li data-i18n="hero.point2">Designsystem och komponentbibliotek</li>
+                    <li data-i18n="hero.point3">Prestanda- och tillgänglighetslyft</li>
                 </ul>
-            </nav>
-        </div>
-        <div class="main-container overlay">
-            <section class="welcome" id="welcome" aria-label="Välkomstsida">
-                <!-- Animated background effects -->
-                <div class="bg-effects">
-                    <div class="floating-particles">
-                        <div class="particle">C</div>
-                        <div class="particle">#</div>
-                        <div class="particle">J</div>
-                        <div class="particle">S</div>
-                        <div class="particle">&lt;</div>
-                        <div class="particle">&gt;</div>
-                        <div class="particle">{</div>
-                        <div class="particle">}</div>
-                        <div class="particle">0</div>
-                        <div class="particle">1</div>
-                        <div class="particle">*</div>
-                        <div class="particle">/</div>
-                        <div class="particle">+</div>
-                        <div class="particle">-</div>
-                        <div class="particle">=</div>
-                        <div class="particle">;</div>
-                        <div class="particle">:</div>
-                        <div class="particle">[</div>
-                        <div class="particle">]</div>
-                        <div class="particle">(</div>
-                        <div class="particle">)</div>
-                        <div class="particle">$</div>
-                        <div class="particle">%</div>
-                        <div class="particle">&amp;</div>
-                    </div>
-                    <div class="light-beams">
-                        <div class="beam beam-1"></div>
-                        <div class="beam beam-2"></div>
-                        <div class="beam beam-3"></div>
-                    </div>
-                    <div class="grid-overlay"></div>
+                <div class="card-footer">
+                    <span data-i18n="hero.availability">Tillgänglig för nya uppdrag nu</span>
                 </div>
-                
-                <div class="splash-text">
-                    <h1>Välkommen till DiagTech</h1>
-                    <p><strong>Front-end Konsult</strong><br></p>
-                    <button class="button-primary" onclick="scrollToSection('contact')" aria-label="Gå till kontaktformulär">Kontakta mig</button>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="section-header">
+                <p class="eyebrow" data-i18n="about.eyebrow">Vem jag är</p>
+                <h2 data-i18n="about.title">Teknik, tempo och tydlig kommunikation.</h2>
+                <p class="lede" data-i18n="about.body">Jag hjälper team att leverera stabila lösningar i högt tempo. Med bakgrund som front-end konsult och .NET-utvecklare bygger jag broar mellan produkt, design och teknik.</p>
+            </div>
+            <div class="grid two-cols">
+                <div class="card">
+                    <h3 data-i18n="about.stackTitle">Teknisk verktygslåda</h3>
+                    <ul class="pill-list">
+                        <li>ASP.NET Core</li>
+                        <li>Blazor</li>
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>Azure</li>
+                        <li>CI/CD</li>
+                    </ul>
                 </div>
-            </section>
-            <section class="about" id="about" aria-labelledby="about-heading">
-                <div class="about-wrapper">
-                    <div class="about-image">
-                        <div class="about-icon">
-                            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="60" cy="60" r="58" stroke="url(#gradient1)" stroke-width="4"/>
-                                <circle cx="60" cy="45" r="15" fill="url(#gradient1)"/>
-                                <path d="M35 95c0-13.8 11.2-25 25-25s25 11.2 25 25" stroke="url(#gradient1)" stroke-width="4" stroke-linecap="round"/>
-                                <defs>
-                                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" style="stop-color:#0066ff"/>
-                                        <stop offset="100%" style="stop-color:#00d9ff"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="about-text">
-                        <h2 id="about-heading">Vem jag är</h2>
-                        <p>Jag är en konsult med erfarenhet inom webbutveckling. Jag erbjuder skräddarsydda lösningar för både privatpersoner och företag, med fokus på <strong>ASP.NET Core, Blazor och modern front-end utveckling</strong>.</p>
-                        
+                <div class="card">
+                    <h3 data-i18n="about.approachTitle">Så arbetar jag</h3>
+                    <p data-i18n="about.approachText">Snabba iterationer, tydliga demos och mätbar effekt. Jag kliver in där ni behöver mig: från discovery och arkitektur till färdiga komponenter och release.</p>
+                    <div class="ticks">
+                        <span data-i18n="about.point1">Designsystem & komponentbibliotek</span>
+                        <span data-i18n="about.point2">Prestandaoptimering & Core Web Vitals</span>
+                        <span data-i18n="about.point3">Tillgänglighet enligt WCAG 2.1</span>
                     </div>
                 </div>
-                <div class="about-wrapper">
-                    <div class="about-text">
-                        <h3>Teknisk kompetens</h3>
-                        <p>Jag arbetar med moderna teknologier som <strong>ASP.NET Core, C#, Blazor, React, HTML5, CSS3 och JavaScript</strong>. Jag hjälper företag att skapa webbapplikationer med fokus på funktionalitet och användarupplevelse.</p>
-                        <ul class="expertise-list" role="list">
-                            <li>🚀 C# & JavaScript utveckling</li>
-                            <li>⚛️ Blazor & React applikationer</li>
-                            <li>🎨 Responsiv design & UX/UI</li>
-                        </ul>
+            </div>
+        </section>
+
+        <section id="services" class="section services">
+            <div class="section-header">
+                <p class="eyebrow" data-i18n="services.eyebrow">Tjänster</p>
+                <h2 data-i18n="services.title">Resultatdriven utveckling från idé till release.</h2>
+            </div>
+            <div class="grid three-cols">
+                <article class="service-card">
+                    <div class="service-kicker" data-i18n="services.webapp.kicker">Backend + Frontend</div>
+                    <h3 data-i18n="services.webapp.title">ASP.NET Core & API:er</h3>
+                    <p data-i18n="services.webapp.body">Skalbara API:er och backend som håller för produktion. Fokus på säkerhet, testbarhet och CI/CD.</p>
+                    <ul>
+                        <li data-i18n="services.webapp.point1">REST & GraphQL</li>
+                        <li data-i18n="services.webapp.point2">Autentisering & B2C</li>
+                        <li data-i18n="services.webapp.point3">Databaser & caching</li>
+                    </ul>
+                </article>
+                <article class="service-card">
+                    <div class="service-kicker" data-i18n="services.blazor.kicker">Single Page Apps</div>
+                    <h3 data-i18n="services.blazor.title">Blazor & komponenter</h3>
+                    <p data-i18n="services.blazor.body">Komponentbaserade gränssnitt med C# end-to-end. Designsystem, teming och återanvändbara moduler.</p>
+                    <ul>
+                        <li data-i18n="services.blazor.point1">Server & WebAssembly</li>
+                        <li data-i18n="services.blazor.point2">SignalR realtid</li>
+                        <li data-i18n="services.blazor.point3">PWA-stöd</li>
+                    </ul>
+                </article>
+                <article class="service-card">
+                    <div class="service-kicker" data-i18n="services.frontend.kicker">UX + Performance</div>
+                    <h3 data-i18n="services.frontend.title">Modern front-end</h3>
+                    <p data-i18n="services.frontend.body">Snabba, responsiva och tillgängliga upplevelser. Jag tar hand om pixelprecision, interaktioner och mätbara förbättringar.</p>
+                    <ul>
+                        <li data-i18n="services.frontend.point1">React & TypeScript</li>
+                        <li data-i18n="services.frontend.point2">Designsystem & Storybook</li>
+                        <li data-i18n="services.frontend.point3">Core Web Vitals-optimering</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="section-header">
+                <p class="eyebrow" data-i18n="contact.eyebrow">Kontakt</p>
+                <h2 data-i18n="contact.title">Låt oss prata om ditt nästa projekt.</h2>
+                <p class="lede" data-i18n="contact.body">Skicka ett kort meddelande så återkommer jag med förslag på upplägg och tidplan.</p>
+            </div>
+            <div class="grid two-cols contact-grid">
+                <div class="contact-card">
+                    <div class="contact-row">
+                        <span class="label" data-i18n="contact.emailLabel">E-post</span>
+                        <a href="mailto:info@diagtech.se">info@diagtech.se</a>
                     </div>
-                    <div class="about-image">
-                        <div class="about-icon">
-                            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="15" y="25" width="90" height="60" rx="8" stroke="url(#gradient2)" stroke-width="3" fill="rgba(0, 102, 255, 0.1)"/>
-                                <rect x="25" y="35" width="70" height="40" rx="4" fill="rgba(0, 217, 255, 0.2)"/>
-                                <circle cx="30" cy="45" r="3" fill="#00d9ff"/>
-                                <circle cx="40" cy="45" r="3" fill="#0066ff"/>
-                                <circle cx="50" cy="45" r="3" fill="#00d9ff"/>
-                                <rect x="30" y="55" width="60" height="2" fill="#0066ff"/>
-                                <rect x="30" y="60" width="45" height="2" fill="#00d9ff"/>
-                                <rect x="30" y="65" width="50" height="2" fill="#0066ff"/>
-                                <path d="M45 95L60 105L75 95" stroke="url(#gradient2)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                <defs>
-                                    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" style="stop-color:#0066ff"/>
-                                        <stop offset="100%" style="stop-color:#00d9ff"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
+                    <div class="contact-row">
+                        <span class="label" data-i18n="contact.phoneLabel">Telefon</span>
+                        <a href="tel:+46702060923">+46 70 206 09 23</a>
                     </div>
-                </div>
-            </section>
-            <section class="services" id="services" aria-labelledby="services-heading">
-                <div class="services-header">
-                    <h2 id="services-heading">Tjänster</h2>
-                    <p>Lösningar inom ASP.NET Core, Blazor och modern front-end utveckling</p>
-                </div>
-                <div class="services-grid">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="5" y="15" width="50" height="30" rx="4" stroke="#00d9ff" stroke-width="2" fill="rgba(0, 102, 255, 0.1)"/>
-                                <circle cx="12" cy="22" r="2" fill="#00d9ff"/>
-                                <circle cx="18" cy="22" r="2" fill="#0066ff"/>
-                                <circle cx="24" cy="22" r="2" fill="#00d9ff"/>
-                                <rect x="12" y="28" width="35" height="2" fill="#0066ff"/>
-                                <rect x="12" y="32" width="25" height="2" fill="#00d9ff"/>
-                                <rect x="12" y="36" width="30" height="2" fill="#0066ff"/>
-                                <path d="M20 50 L30 55 L40 50" stroke="#00d9ff" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                        <h3>ASP.NET Core</h3>
-                        <p>Jag utvecklar webbapplikationer med C# och ASP.NET Core. Fokus ligger på att bygga funktionella och skalbara backend-lösningar med modern arkitektur.</p>
-                        <ul>
-                            <li>ASP.NET Core Web API</li>
-                            <li>MVC applikationer</li>
-                            <li>Database integration</li>
-                            <li>Authentication & Authorization</li>
-                        </ul>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M30 5 L45 13 L45 37 L30 45 L15 37 L15 13 Z" stroke="#00d9ff" stroke-width="2" fill="rgba(0, 102, 255, 0.1)"/>
-                                <path d="M30 12 L39 17 L39 33 L30 38 L21 33 L21 17 Z" fill="rgba(0, 217, 255, 0.3)"/>
-                                <circle cx="30" cy="25" r="8" fill="#00d9ff" opacity="0.8"/>
-                                <path d="M25 22 L28 25 L37 16" stroke="#0066ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M18 48 L30 53 L42 48" stroke="#00d9ff" stroke-width="2" stroke-linecap="round"/>
-                                <circle cx="12" cy="50" r="2.5" fill="#00d9ff" opacity="0.6"/>
-                                <circle cx="48" cy="50" r="2.5" fill="#0066ff" opacity="0.6"/>
-                            </svg>
-                        </div>
-                        <h3>Blazor Applikationer</h3>
-                        <p>Jag utvecklar klient-sidiga applikationer med Blazor. Genom att använda C# för både front-end och back-end blir koden mer konsistent och lättare att underhålla.</p>
-                        <ul>
-                            <li>Blazor Server & WebAssembly</li>
-                            <li>Komponentbaserad utveckling</li>
-                            <li>Real-time funktionalitet</li>
-                            <li>PWA integration</li>
-                        </ul>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="8" y="12" width="44" height="36" rx="4" stroke="#00d9ff" stroke-width="2" fill="rgba(0, 102, 255, 0.1)"/>
-                                <rect x="12" y="18" width="36" height="24" rx="2" fill="rgba(0, 217, 255, 0.2)"/>
-                                <path d="M18 25 L22 29 L18 33 M26 33 L32 33" stroke="#00d9ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <circle cx="15" cy="15" r="1.5" fill="#ff6b6b"/>
-                                <circle cx="19" cy="15" r="1.5" fill="#ffd93d"/>
-                                <circle cx="23" cy="15" r="1.5" fill="#6bcf7f"/>
-                                <path d="M35 25 L39 25 M35 29 L41 29 M35 33 L37 33" stroke="#0066ff" stroke-width="1.5" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                        <h3>Modern Front-end</h3>
-                        <p>Jag skapar moderna och responsiva gränssnitt med fokus på kodkvalitet och prestanda. Med HTML5, CSS3 och JavaScript bygger jag lösningar som fungerar bra på alla plattformar.</p>
-                        <ul>
-                            <li>Responsiv design</li>
-                            <li>CSS Grid & Flexbox</li>
-                            <li>JavaScript ES6+</li>
-                            <li>React integration</li>
-                        </ul>
+                    <div class="contact-row">
+                        <span class="label" data-i18n="contact.locationLabel">Plats</span>
+                        <span data-i18n="contact.locationValue">Sverige • Remote eller på plats</span>
                     </div>
                 </div>
-            </section>
-            <section class="contact" id="contact">
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h2>Kontakta mig</h2>
-                        <p>Redo att starta ditt nästa projekt? Låt oss diskutera hur jag kan hjälpa dig att förverkliga dina idéer.</p>
-                        
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="4" y="8" width="24" height="16" rx="2" stroke="#00d9ff" stroke-width="2" fill="rgba(0, 102, 255, 0.1)"/>
-                                        <path d="M4 10 L16 18 L28 10" stroke="#0066ff" stroke-width="2" stroke-linecap="round"/>
-                                        <circle cx="8" cy="12" r="1" fill="#00d9ff"/>
-                                        <circle cx="24" cy="12" r="1" fill="#0066ff"/>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h4>Email</h4>
-                                    <a href="mailto:info@diagtech.se">info@diagtech.se</a>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="8" y="4" width="16" height="24" rx="3" stroke="#00d9ff" stroke-width="2" fill="rgba(0, 102, 255, 0.1)"/>
-                                        <rect x="10" y="8" width="12" height="16" rx="1" fill="rgba(0, 217, 255, 0.2)"/>
-                                        <circle cx="16" cy="26" r="1.5" fill="#0066ff"/>
-                                        <rect x="14" y="6" width="4" height="1" rx="0.5" fill="#00d9ff"/>
-                                        <rect x="12" y="10" width="8" height="1" fill="#0066ff"/>
-                                        <rect x="12" y="12" width="6" height="1" fill="#00d9ff"/>
-                                        <rect x="12" y="14" width="7" height="1" fill="#0066ff"/>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h4>Telefon</h4>
-                                    <a href="tel:+46701234567">+46 70 206 09 23</a>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="16" cy="14" r="6" stroke="#00d9ff" stroke-width="2" fill="rgba(0, 102, 255, 0.1)"/>
-                                        <circle cx="16" cy="14" r="3" fill="#0066ff"/>
-                                        <path d="M10 20 C12 24, 20 24, 22 20" stroke="#00d9ff" stroke-width="2" stroke-linecap="round"/>
-                                        <path d="M8 22 C10 26, 22 26, 24 22" stroke="#0066ff" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h4>Plats</h4>
-                                    <p>Sverige (Remote arbete möjligt)</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-form">
-                        <form action="https://formsubmit.co/info@diagtech.se" method="POST">
-                            <!-- FormSubmit.co configuration -->
-                            <input type="hidden" name="_subject" value="Ny kontakt från DiagTech">
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_next" value="https://diagtech.se/thank-you.html">
-                            
-                            <div class="form-group">
-                                <label for="name">Namn</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Ämne</label>
-                                <select id="subject" name="Tjänst" required>
-                                    <option value="">Välj tjänst</option>
-                                    <option value="ASP.NET Core Utveckling">ASP.NET Core Utveckling</option>
-                                    <option value="Blazor Applikationer">Blazor Applikationer</option>
-                                    <option value="Modern Front-end">Modern Front-end</option>
-                                    <option value="Fullstack Lösning">Fullstack Lösning</option>
-                                    <option value="Annat">Annat</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Meddelande</label>
-                                <textarea id="message" name="message" rows="5" placeholder="Berätta om ditt projekt..." required></textarea>
-                            </div>
-                            <button type="submit" class="button-primary">Skicka meddelande</button>
-                        </form>
-                    </div>
+                <div class="form-card">
+                    <form action="https://formsubmit.co/info@diagtech.se" method="POST">
+                        <input type="hidden" name="_subject" value="Ny kontakt från DiagTech">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://diagtech.se/thank-you.html">
+
+                        <label for="name" data-i18n="form.name">Namn</label>
+                        <input id="name" name="name" type="text" required>
+
+                        <label for="email" data-i18n="form.email">E-post</label>
+                        <input id="email" name="email" type="email" required>
+
+                        <label for="subject" data-i18n="form.service">Tjänst</label>
+                        <select id="subject" name="Tjänst" required>
+                            <option value="" data-i18n="form.choose">Välj tjänst</option>
+                            <option value="ASP.NET Core" data-i18n="form.opt1">ASP.NET Core</option>
+                            <option value="Blazor" data-i18n="form.opt2">Blazor</option>
+                            <option value="Front-end" data-i18n="form.opt3">Front-end</option>
+                            <option value="Fullstack" data-i18n="form.opt4">Fullstack</option>
+                            <option value="Other" data-i18n="form.opt5">Annat</option>
+                        </select>
+
+                        <label for="message" data-i18n="form.message">Projektbeskrivning</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Berätta kort om målet" required></textarea>
+
+                        <button type="submit" class="button primary" data-i18n="form.submit">Skicka</button>
+                    </form>
                 </div>
-            </section>
-            <footer>
-                <p>DiagTech 2025</p>
-            </footer>
-        </div>
-    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p data-i18n="footer">DiagTech © 2025</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
